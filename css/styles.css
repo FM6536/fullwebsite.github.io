@@ -1,0 +1,96 @@
+/* Reset khoảng trắng mặc định của trình duyệt */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.features-grid article{
+background:var(--card);
+padding:1rem;
+border-radius:10px;
+border:1px solid #eef2ff;
+}
+
+
+/* =================== Gallery grid (ít nhất 2 cột) =================== */
+.gallery-grid{
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
+gap:3rem;
+padding:1rem 0;
+max-width:1100px;
+margin:0 auto 2rem;
+}
+.gallery-grid figure{
+margin:0;
+background:var(--card);
+padding:.3rem;
+border-radius:10px;
+border:1px solid #e6eef8;
+text-align:center;
+}
+.gallery-grid img{
+width:100%;
+height:260px;
+object-fit:cover;
+border:6px solid #fff; /* border (box model) */
+padding:6px; /* padding (box model) */
+border-radius:8px; /* border-radius (box model) */
+transition:transform .25s ease, box-shadow .25s ease;
+}
+
+
+/* nth-child: mỗi ảnh thứ 2 có radius khác */
+.gallery-grid figure:nth-child(2n) img{
+border-radius:24px;
+}
+
+
+/* hover interesting effect */
+.gallery-grid img:hover{
+transform:scale(1.03) rotate(-0.5deg);
+box-shadow:0 10px 30px rgba(2,6,23,0.12);
+}
+
+
+/* =================== Footer =================== */
+.site-footer{
+text-align:center;
+padding:1.25rem;
+color:var(--muted);
+}
+
+/*Nav bar */
+.site-nav {
+  display: flex;
+  gap: 1rem;
+  background: linear-gradient(to right, #4a90e2, #0072ff);
+  padding: 0.75rem 1rem;
+  border-radius: 0;            
+  width: 100vw;
+  margin-left: calc(50% - 50vw);
+  margin-right: calc(50% - 50vw);
+}
+
+.site-nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600;
+  padding: 0.5rem 0.75rem;
+  border-radius: 5px;
+  transition: background 0.3s ease, transform 0.2s ease;
+}
+
+.site-nav a:hover,
+.site-nav a:focus {
+  background: rgba(255,255,255,0.2);
+  transform: translateY(-2px);
+}
+
+
+/* =================== Responsive tweaks =================== */
+@media (max-width:640px){
+.site-header{flex-direction:column;align-items:flex-start;gap:.5rem}
+.hero{margin:1rem}
+}

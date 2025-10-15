@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title></title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#about-main"></a>
+<header class="site-header">
+<div class="brand">
+<h1></h1>
+</div>
+<nav class="site-nav" aria-label="Main navigation">
+<a href="index.html">Homepage</a>
+<a href="about.html">Information</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+<div style="white-space: pre-line;">
+
+</div>
+</header>
+
+
+<main id="about-main">
+<h2>Về dự án</h2>
+<p>Trang này giải thích mục tiêu của dự án: tạo một website nhỏ thể hiện các kỹ thuật CSS và tiêu chí truy cập.</p>
+
+
+<section class="team">
+<h3>Tính năng kỹ thuật</h3>
+<ul>
+<li>Skip link chỉ hiển thị khi focus (sử dụng :focus và position)</li>
+<li>Navigation sử dụng flex</li>
+<li>Gallery sử dụng grid (ít nhất 2 cột)</li>
+<li>Ảnh được style bằng box model (border, padding, border-radius)</li>
+<li>Sử dụng hover và nth-child</li>
+</ul>
+</section>
+
+
+</main>
+<footer class="site-footer">
+<p>&copy; <span id="year3"></span> Website Truy Cập</p>
+</footer>
+
+
+<script>
+document.getElementById('year3').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

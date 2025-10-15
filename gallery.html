@@ -1,0 +1,46 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Bộ Sưu Tập — Website Truy Cập</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#gallery-main">Bỏ qua tới nội dung chính</a>
+
+
+<header class="site-header">
+<div class="brand">
+<h1></h1>
+</div>
+<nav class="site-nav" aria-label="Điều hướng chính">
+<a href="index.html">Trang chủ</a>
+<a href="gallery.html">Bộ sưu tập</a>
+<a href="about.html">Giới thiệu</a>
+</nav>
+<div style="white-space: pre-line;">
+
+</div>
+</header>
+
+
+<main id="gallery-main">
+<h2>Bộ sưu tập ảnh</h2>
+<p>Phần này sử dụng Grid để sắp xếp ít nhất 5 ảnh. Mỗi ảnh có border, padding và border-radius.</p>
+<section class="gallery-grid" aria-label="Bộ sưu tập ảnh">
+<figure><img src="images\ep10-cingray.gif" alt="Ảnh 1"><figcaption>Ảnh 1</figcaption></figure>
+<figure><img src="images\satono-diamond-umamusume.gif" alt="Ảnh 2"><figcaption>Ảnh 2</figcaption></figure>
+<figure><img src="images\bg,f8f8f8-flat,750x,075,f-pad,750x1000,f8f8f8.jpg" alt="Ảnh 3"><figcaption>Ảnh 3</figcaption></figure>
+<figure><img src="images\absolute-cinema-golshi-v0-m5ohhagytpcf1.webp" alt="Ảnh 4"><figcaption>Ảnh 4</figcaption></figure>
+<figure><img src="images\download.jpg" alt="Ảnh 5"><figcaption>Ảnh 5</figcaption></figure>
+</section>
+</main>
+<footer class="site-footer">
+<p>&copy; <span id="year2"></span> Website Truy Cập</p>
+</footer>
+<script>
+document.getElementById('year2').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!doctype html>
+<html lang="vi">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Trang Chủ — Website Truy Cập</title>
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+<a class="skip-link" href="#main">Skip To Main Content </a>
+<header class="site-header">
+<div class="brand">
+<h1></h1>
+</div>
+<nav class="site-nav" aria-label="Điều hướng chính">
+<a href="index.html">Homepage</a>
+<a href="about.html">Information</a>
+<a href="gallery.html">Gallery</a>
+</nav>
+</header>
+<main id="main">
+<section class="hero">
+<img src="images\1282113.png" width="100%" height="100%" alt="Cảnh thiên nhiên đẹp" class="hero-img">
+</section>
+<section class="features">
+<h3>Tính năng chính</h3>
+<div class="features-grid">
+<article>
+<h4>Truy cập</h4>
+<p>Skip link, markup semantic và ARIA nơi cần thiết.</p>
+</article>
+<article>
+<h4>Phản hồi</h4>
+<p>Bố cục grid và flex tương thích nhiều kích thước màn hình.</p>
+</article>
+<article>
+<h4>Đã kiểm tra</h4>
+<p>Hỗ trợ kiểm tra bằng W3C Validator và công cụ WAVE.</p>
+</article>
+</div>
+</section>
+</main>
+
+
+<footer class="site-footer">
+<p>&copy; <span id="year"></span> Website Truy Cập</p>
+</footer>
+
+
+<script>
+document.getElementById('year').textContent = new Date().getFullYear();
+</script>
+</body>
+</html>
